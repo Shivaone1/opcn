@@ -22,12 +22,29 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const menu= [{"title":'Home', "url":'/'},{"title":'Contact',"url":'contact-us'},{"title":'Login',"url":'login'},{"title":"Register","url":'register'}];
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <nav className="row-start-1 flex gap-4 items-center justify-center">
+        {menu.map((item, index) => {
+          return (
+            <a
+              key={item.title}
+              href={item.url}
+              className="text-blue-500 hover:underline"
+            >
+              {item.title}
+            </a>
+          );
+        })}
+      </nav>
         {children}
+        <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
+          Copy@2025 OPC
+        </footer>
       </body>
     </html>
   );
