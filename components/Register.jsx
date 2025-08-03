@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Home = () => {
+const Register = () => {
   return (
     <>
       <h1>This is Register Page Ok</h1>
@@ -8,4 +8,4 @@ const Home = () => {
   );
 }
 
-export default Home;
+export default Register;

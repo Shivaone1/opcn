@@ -1,0 +1,39 @@
+npx create-next-app .
+
+npm install bootstrap@4
+
+
+
+my-next-app/
+├── app/                     # App directory (routes, layouts, pages)
+│   ├── layout.tsx           # Root layout (shared across all pages)
+│   ├── page.tsx             # Root page (homepage)
+│   ├── about/               # Route: /about
+│   │   └── page.tsx
+│   ├── dashboard/           # Route group: /dashboard
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   └── api/                 # API routes
+│       └── hello/           # /api/hello
+│           └── route.ts
+│
+├── components/              # Reusable UI components
+│   ├── Button.tsx
+│   └── Header.tsx
+│
+├── lib/                     # Utilities, API clients, etc.
+│   ├── db.ts                # DB connection
+│   └── api.ts               # API client logic
+│
+├── styles/                  # Global styles
+│   ├── globals.css
+│   └── theme.css
+│
+├── public/                  # Static assets (images, fonts)
+│   └── favicon.ico
+│
+├── middleware.ts            # Middleware (auth, redirects, etc.)
+├── next.config.js           # Next.js config
+├── tailwind.config.js       # Tailwind (if using)
+├── tsconfig.json            # TypeScript config
+└── package.json

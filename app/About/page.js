@@ -1,10 +1,6 @@
-import About from '../components/About.jsx';
+import About from '@/components/About.jsx';
 const Aboutpage = () => {
-  return (
-    <>
-     <About/>
-    </>
-  );
+  return <About/>
 }
 
 export default Aboutpage;

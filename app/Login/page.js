@@ -1,11 +1,6 @@
-import React from 'react';
-
-const Login = () => {
-  return (
-    <>
-      <h1>welcome to login page</h1>
-    </>
-  );
+import Login from "@/components/Login";
+const LoginRout = () => {
+  return <Login />;
 }
 
-export default Login;
+export default LoginRout;
