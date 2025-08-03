@@ -1,11 +1,10 @@
-import React from 'react';
-
-const About = () => {
+import About from '../components/About.jsx';
+const Aboutpage = () => {
   return (
     <>
-     <h1>welcome to about page</h1> 
+     <About/>
     </>
   );
 }
 
-export default About;
+export default Aboutpage;
